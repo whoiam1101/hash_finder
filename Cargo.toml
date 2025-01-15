@@ -2,5 +2,10 @@
 name = "hash_finder"
 version = "0.1.0"
 edition = "2021"
+authors = ["Samvel Safaryan samvel.safaryan13@yandex.ru"]
+description = "A program that finds numbers whose SHA-256 hash ends with N zeros"
 
 [dependencies]
+clap = { version = "4.4", features = ["derive"] }
+sha2 = "0.10"
+rayon = "1.5"
